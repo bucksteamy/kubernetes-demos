@@ -1,0 +1,57 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "masterDnsNamePrefix": {
+        "value": "GEN-UNIQUE"
+      },
+      "agentDnsNamePrefix": {
+        "value": "GEN-UNIQUE"
+      },
+      "agentPool1Count": {
+        "value": 2
+      },
+      "agentPool2Count": {
+        "value": 2
+      },
+      "agentPool1VMSize": {
+        "value": "Standard_D2_v2"
+      },
+      "agentPool2VMSize": {
+        "value": "Standard_D2_v2"
+      },
+      "linuxAdminUsername": {
+        "value": "azureuser"
+      },
+      "windowsAgentAdminUsername": {
+        "value": "azureuser"
+      },
+      "windowsAgentAdminPassword":{
+          "value": "password1234$"
+      },
+      "orchestratorType": {
+        "value": "Kubernetes"
+      },
+      "masterCount": {
+        "value": 1
+      },
+      "masterVMSize": {
+        "value": "Standard_D2_v2"
+      },
+      "sshRSAPublicKey": {
+        "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDyh5TAhPG0ZI6BCs60F3YdAoiPwg5b0Qn7i/l9V7JXppskCY9k0vrBrEO6BaxZq72tMI01xchlSKjyAOZEmHmVY9NgPfymjVzXmZsLqAJjJIBVkw1X0u+B9Go6C4uAaxTsvzdL7blsGRQH+2Z7K3YwwUxz77DZJEDzO66jZM/qRtIVvsAzZN1YBk6sqFIKNKrmE9otvao4JYjdALQikPFVLuYH2Y9oGNuSe2XqnSS8v6rWKgdZqXs+kfquLIAIaNhpX2oIhp3e1OrqYbltVLDGj75U5vsuEaK630rIhHk/tC/Qeukiqpfue9/EtSQpVDwpGboDKMUUTxEFwR7Mwott"
+      },
+      "servicePrincipalClientId": {
+        "value": "31b8c04f-2eb7-4b8b-841b-2d02f45c804f"
+      },
+      "servicePrincipalClientSecret": {
+        "value": "G8dUFgtCHXCOd4n+NJaI/zwk6urkxtVfldXIAwbUR+0="
+      },
+      "agentPool1osType": {
+          "value": "Windows"
+      },
+      "agentPool2osType": {
+        "value": "Linux"
+    }
+    }
+  }
