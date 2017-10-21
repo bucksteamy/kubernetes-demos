@@ -1,3 +1,5 @@
+# Build a k8s cluster in ACS with a windows pool and linux pool
+
 * Deloy cluster via ARM deployment
     * az group deployment create -g rg-acs-winpluslinux --template-file deployment.json --parameters azuredeploy.params.kubernetes.json
 * Label nodes based on OS
